@@ -42,7 +42,9 @@ class TrainingAnalyzer:
         plt.xticks(rotation=15)
 
         print("Rendering visual graph... (Close the pop-up window to end the script)")
-        plt.show()
+        plt.tight_layout()
+        fig = plt.gcf()
+        return fig
 
 if __name__ == "__main__":
     sarah = Athlete("Sarah", 240, 58.5)
