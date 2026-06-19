@@ -1,4 +1,4 @@
-from athlete import Athlete
+from models.athlete import Athlete
 
 class Workout:
     def __init__(self, title, duration_minutes, avg_watts):

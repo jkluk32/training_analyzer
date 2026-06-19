@@ -1,5 +1,5 @@
-from athlete import Athlete
-from workout import Workout
+from models.athlete import Athlete
+from models.workout import Workout
 
 print("--- Initializing Race System ---\n")
 

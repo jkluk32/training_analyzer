@@ -1,7 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
-from athlete import Athlete
-from workout import Workout
+from models.athlete import Athlete
+from models.workout import Workout
 
 print("--- Booting up Training Analyzer Engine ---\n")
 
@@ -47,7 +47,7 @@ class TrainingAnalyzer:
 if __name__ == "__main__":
     sarah = Athlete("Sarah", 240, 58.5)
     app = TrainingAnalyzer(sarah)
-    app.load_data_from_csv("ride_data.csv")
+    app.load_data_from_csv("data/ride_data.csv")
 
     final_score = app.calculate_total_load()
     print(f"Total Weekly Training Stress for {sarah.name}: {final_score} TSS")
